@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+    <canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
+    <div class="phone-container">
+        <div class="phone-notch"></div>
+  <div class="header-image">
+    <img src="banner.png" alt="Header Image">
+  </div>
+
+  <div class="profile-image">
+    <img src="profile.jpg" alt="Profile Photo">
+  </div>
+
+  <div class="profile-name">
+    <h1>Rohith A P</h1>
+    <h3>Consultor</h3>
+  </div>
+
+  <div class="contact-buttons">
+    <a href="tel:+917397797148" title="Call">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="mailto:nova.events.vibe@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+   <a href="rohith.vcf" title="Save Contact">
+        <i class="fas fa-user"></i>
+    </a>
+
+  </div>
+
+<div class="social-links">
+  <a href="#" onclick="openInstagram()" title="Follow on Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<script>
+function openInstagram() {
+  const username = "nova_events_coimbatore";
+  const appUrl = `instagram://user?username=${username}`;
+  const webUrl = `https://www.instagram.com/${username}`;
+
+  window.location = appUrl;
+
+  // Fallback to browser after 2 seconds
+  setTimeout(() => {
+    window.location = webUrl;
+  }, 2000);
+}
+</script>
+  <a href="https://wa.me/917397797148"  title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://novaevents.netlify.app/#"title="Website">
+    <i class="fas fa-globe"></i>
+  </a>
+</div>
+
+
+<div class="connect-button">
+  <a href="rohith.vcf" download title="Save to Contacts">
+    <i class="fas fa-address-card"></i> Connect
+  </a>
+</div>
+ <script src="back.js"></script>
+</body>
+</html>
